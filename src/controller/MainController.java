@@ -47,8 +47,7 @@ public class MainController implements Controller{
 			}
 			if(b == EQUAL){
 				//bufferList.add("=");
-				bufferAff = monModele.compute(bufferList);
-				bufferAff = new String();
+				bufferAff = monModele.compute(bufferList);			
 			}
 			this.buffer = new String();
 		}

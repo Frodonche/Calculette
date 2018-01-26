@@ -33,28 +33,8 @@ public class MainModel {
 	
 	// celle la marche pas encore
 	public String compute(ArrayList<String> maListe){
-		String precOp = " ";
-		String precDigit = " ";
-		int result = 0;
-		for(String s : maListe){
-			if(s == "+"){ 
-				precOp = "+";
-			}else if(s == "-"){
-				precOp = "-";
-			}else{ // si on tombe sur un digit
-				if(precOp == " " && precDigit == " "){ // si c'est la premiere fois qu'on tape un caractere
-					precDigit = s;
-					precOp = "+"; // par defaut : +
-				}else if(precOp == "+"){
-					
-				}else if(precOp == "-"){
-					
-				}else{ // si c'est la suite d'un nombre
-					
-				}
-			}
-		}
-		return 2+""; // return bidon pour l'instant
+	
+		return "coucou";
 	}
 }
   
