@@ -15,5 +15,6 @@ public class Launcher {
 		modele.addController(monController);
 		
 		maVue.setController(monController);
+		monController.setModel(modele);
 	}
 }

@@ -18,7 +18,7 @@ public class MainController implements Controller{
 	private MainModel monModele;
 	
 	public MainController(){
-		this.buffer = new String();
+		this.buffer = new String("0+");
 		this.bufferList = new ArrayList<String>();
 		this.bufferAff = new String();
 	}
@@ -46,9 +46,9 @@ public class MainController implements Controller{
 				this.bufferAff += "-";
 			}
 			if(b == EQUAL){
-				bufferList.add("=");
+				//bufferList.add("=");
+				bufferAff = monModele.compute(bufferList);
 				bufferAff = new String();
-				//bufferAff = monModele.compute(bufferList);
 			}
 			this.buffer = new String();
 		}
